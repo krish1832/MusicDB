@@ -93,12 +93,12 @@ SELECT * FROM Premium_Plan;
 
 -- 2. User Subscribes to a Plan
 
-CALL SubscribeWithTransaction(1, 4); –user with id 1 subscribe to id 4 plan
+CALL SubscribeWithTransaction(1, 4);  --user with id 1 subscribe to id 4 plan
 
 
 -- 3. User Checks Plan Expiry Date
 
-SELECT GetPlanExpiry(1) AS Expiry_Date;   - - here user id is 1
+SELECT GetPlanExpiry(1) AS Expiry_Date;   -- here user id is 1
 
 
 -- 4. User Checks If They Have an Active Plan
