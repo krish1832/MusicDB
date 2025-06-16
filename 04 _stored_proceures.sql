@@ -1,7 +1,7 @@
--- Add User
-
 DELIMITER $$
 
+-- Add User
+    
 CREATE PROCEDURE AddUser (
     IN p_Username VARCHAR(50),
     IN p_Email VARCHAR(100),
@@ -13,11 +13,7 @@ BEGIN
     VALUES (p_Username, p_Email, p_Password, p_DOB);
 END$$
 
-DELIMITER ;
-
 -- User subscribe to Premium Plan
-
-DELIMITER $$
 
 CREATE PROCEDURE SubscribeToPremium (
     IN p_UserID INT,
@@ -29,11 +25,7 @@ BEGIN
     VALUES (p_UserID, p_PlanID, NOW(), p_Amount);
 END$$
 
-DELIMITER ;
-
 -- Create a Playlist
-
-DELIMITER $$
 
 CREATE PROCEDURE CreatePlaylist (
     IN p_UserID INT,
@@ -44,12 +36,8 @@ BEGIN
     VALUES (p_Title, p_UserID, 0);
 END$$
 
-DELIMITER ;
-
 -- Add a song to playlist
-
-DELIMITER $$
-
+    
 CREATE PROCEDURE AddSongToPlaylist (
     IN p_PlaylistID INT,
     IN p_SongID INT
@@ -59,12 +47,8 @@ BEGIN
     VALUES (p_PlaylistID, p_SongID);
 
 END$$
-
-DELIMITER ;
-
+    
 -- Get all Premium Plans for a User
-
-DELIMITER $$
 
 CREATE PROCEDURE GetUserPlans (
     IN p_UserID INT
