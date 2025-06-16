@@ -1,4 +1,4 @@
-# MusicDB
+# MusicDB 🎵
 
 A relational database project for a music streaming platform, featuring user management, playlists, songs, premium subscriptions, payments, and business logic encapsulated through SQL.
 
@@ -15,14 +15,17 @@ A relational database project for a music streaming platform, featuring user man
 
 ## Project Structure
 /MusicDB/
-├── 01_ER_DIAGRAM.jpg - Visual ER diagram of the database schema
-├── 02_ddl_statements.sql - CREATE TABLE statements for all entities
-├── 03_indexes.sql - Index definitions for query optimization
-├── 04_stored_procedure.sql - Stored procedures for subscriptions/playlists
-├── 05_Userdefined_functions.sql - Custom SQL functions (age, expiry, etc.)
-├── 06_Transaction.sql - Sample transaction blocks
-├── 07_SQL_queries.sql - Application-level SQL queries
-└── README.md - Project documentation
+| File Name                   | Description                                  |
+|-----------------------------|----------------------------------------------|
+| `01_ER_DIAGRAM.jpg`         | Visual ER diagram of the database schema     |
+| `02_ddl_statements.sql`     | CREATE TABLE statements for all entities     |
+| `03_indexes.sql`            | Index definitions for query optimization     |
+| `04_stored_procedure.sql`   | Stored procedures for subscriptions/playlists|
+| `05_Userdefined_functions.sql` | Custom SQL functions (age, expiry, etc.)   |
+| `06_Transaction.sql`        | Sample transaction blocks                    |
+| `07_SQL_queries.sql`        | Application-level SQL queries                |
+| `README.md`                 | Project documentation                        |
+
 
 
 
