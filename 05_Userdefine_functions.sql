@@ -17,12 +17,7 @@ BEGIN
     RETURN IFNULL(totalDuration, 0);
 END$$
 
-DELIMITER ;
-
-
 -- Returns expiry date of the latest premium plan for a given user.
-
-DELIMITER $$
 
 CREATE FUNCTION GetPlanExpiry(p_UserID INT)
 RETURNS DATE
@@ -41,11 +36,7 @@ BEGIN
     RETURN expiryDate;
 END$$
 
-DELIMITER ;
-
 -- check if user has any valid plan
-
-DELIMITER $$
 
 CREATE FUNCTION HasActivePlan(p_UserID INT)
 RETURNS BOOLEAN
